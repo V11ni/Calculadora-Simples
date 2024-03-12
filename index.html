@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples. (Não é simples de fazer, mas é simples de usar)</title>
+    <style>
+        label, input {
+            margin-bottom: 20px;
+        }
+
+        body {
+            background-color: rgb(146, 196, 216);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18px;
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        form {
+            margin-bottom: 30px;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 10px 10px;
+            background-color: darkgray;
+            color: black;
+            border: none;
+            border-radius: 10px;
+            border-bottom: 4px solid grey;
+            border-right: 3px solid grey;
+        }
+
+        button:active {
+            background-color: grey;
+        }
+
+        button:hover {
+            box-shadow: 0 0 15px white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form id="form">
+        <h1>Calculadora Simples</h1>
+
+        <label for="nome">Nome:</label><br>
+        <input type = "text" required id="nome"><br>
+
+        <label for="nota1">Nota do Ciclo 1:</label><br>
+        <input type = "number" min="0" max="100" required id="nota1"><br>
+
+        <label for="nota2">Nota do Ciclo 2:</label><br>
+        <input type = "number" min="0" max="100" required id="nota2"><br>
+
+        <label for="nota3d">Nota do Ciclo 3:</label><br>
+        <input type = "number" min="0" max="100" required id="nota3"><br>
+        
+        <button type = "submit"><strong>Calcular a Média</strong></button>
+    </form>
+
+
+    <div id="result">
+        <h2>Resultado</h2>
+    </div>
+    <div id="msg"></div>
+</body>
+<script src="script.js"></script>
+</html>
